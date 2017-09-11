@@ -4,11 +4,14 @@ onload = () => {
     
     send.focus();
     
-    send.addEventListener('keyup', (e) => {
+    send.addEventListener('keyup', () => {
 
-        output.value = 'https://drive.google.com/uc?export=view&id='+e.target.value.substring(32, 60);
+        if('https://drive.google.com/file/d/' !== send.value.substring(0,32)) return;
+        
+        output.value = `https://drive.google.com/uc?export=view&id=${ send.value.substring(32, 60) }`; 
         output.focus();
         output.setSelectionRange(0 , output.value.length);
+        
         send.value = '';
 
         image.style.backgroundImage = `url('${ output.value }`;
