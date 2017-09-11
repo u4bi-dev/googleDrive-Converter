@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "googleDrive Image Link Conversion Extension",
+  "description": "googleDrive Image Link Conversion Extension",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_icon": "assets/icon.png",
+    "default_popup": "src/popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
