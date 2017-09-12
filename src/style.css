@@ -12,3 +12,20 @@ img{
   background-repeat: no-repeat;
   background-position: center;
 }
+
+label{
+  display:inline-block;  
+  font-weight: 700;
+  margin-bottom:5px;
+  width: 65%;
+}
+
+span{
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.todos p{
+  margin:0;
+  padding:0;
+}
